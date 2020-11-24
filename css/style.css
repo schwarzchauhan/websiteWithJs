@@ -1,0 +1,135 @@
+/*---------------------------------- body -------------------------------------------------------*/
+
+body {
+    margin: 0%;
+}
+
+
+/*------------------------------------ header ----------------------------------------*/
+
+#header {}
+
+
+/*------------------------- topHeader -------------------------------*/
+
+#topHeader {
+    background-image: linear-gradient(to right, coral, lightsalmon, sandybrown, plum, thistle);
+}
+
+#topHeader::after {
+    /* clearfix  */
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/*-------- topNav ----------*/
+
+#topNav {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#topNavLink a {
+    color: cyan;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+    float: left;
+}
+
+#topNavLink a:hover {
+    background-color: darkgoldenrod;
+}
+
+#topSearch {
+    float: right;
+}
+
+
+/*--------------------------- topImg --------------------------------*/
+
+#topImg {
+    color: azure;
+}
+
+#topImg img {
+    display: block;
+    margin-left: 10%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/*------------------------- navbar ------------------------------------*/
+
+#navbar {
+    background-image: linear-gradient(to right, coral, lightsalmon, sandybrown, plum, thistle);
+}
+
+
+/*------------ dropDown ---------------------*/
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+}
+
+.dropdown .dropBtn {
+    color: cyan;
+    background-color: inherit;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    width: 120%;
+    padding: 10px;
+    background-color: coral;
+    opacity: 0.6;
+    border-radius: 5px;
+}
+
+.dropdownContent a {
+    display: block;
+    padding: 5px;
+    color: cyan;
+    font-size: 16px;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    text-decoration: none;
+}
+
+.dropdownContent a:hover {
+    font-weight: bold;
+}
+
+
+/*------------ .dropDown:hover ------------------*/
+
+.dropdown:hover .dropBtn {
+    cursor: grab;
+}
+
+.dropdown:hover .dropBtn {
+    background-color: darkgoldenrod;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+    animation: appear 2s linear 0s 1 forwards;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}

@@ -1,0 +1,62 @@
+#slideShowContainer{
+    margin: auto;
+    position: relative;
+
+}
+/*--------------------- slideImg -----------------------*/
+.slideImg{
+    position: relative;
+    display: none;
+    margin: auto;
+    width: 60%;
+    height: 60%;
+}
+.slideImg img{
+   box-sizing: border-box;
+   width: 100%;
+   height: 450px;
+
+   vertical-align: middle;
+}
+.slideText{
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+
+    color: floralwhite;
+}
+/*----------------- pre nxt  ----------------------------*/
+#slideShowContainer a{
+    position: absolute;
+    top: 50%;
+
+    padding: 15px;
+    cursor: pointer;
+}
+.nxt{
+    right: 0;
+}
+.pre:hover, .nxt:hover{
+    background: chartreuse;
+}
+/*-------------- dots --------------------------------*/
+.dots{
+    text-align: center;
+}
+.dot{
+    display: inline-block;
+}
+.active , .dot:hover{
+    color: crimson;
+    cursor: pointer;
+}
+
+/*-------------------- fade ----------------------------*/
+.fade{
+    animation: fade 2s linear 0s 1 forwards;
+}
+@keyframes fade{
+    from{opacity:0.5;}
+    to{ opacity: 1;}
+}
