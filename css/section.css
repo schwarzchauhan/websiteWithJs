@@ -2,40 +2,24 @@
         width: 60%;
         margin: auto;
     }
-    /*-------------------------- .introContainer -----------------------------*/
-    
-    .introContainer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        overflow: none;
-        background-color: rgb(223, 218, 248);
-        padding: 5px;
-    }
-    
-    .introContainer div {
-        flex-basis: 20%;
-        padding: 5px;
-        margin: 5px;
-        background-image: linear-gradient(to right, darkgrey, wheat);
-    }
     /*------------------------- .quotesContainer ------------------------------*/
     
     .quoteContainer {
-        overflow: visible;
-        width: 60%;
-        margin: auto;
-    }
-    
-    .quoteShow {
-        width: 100%;
-        overflow: visible;
-    }
-    
-    .quote {
-        display: inline-block;
-        padding: 10px;
         border: 2px solid black;
+        padding: 10px;
+        background-color: rgb(231, 229, 238);
+    }
+    
+    .owl-theme {
+        border: 1px solid black;
+    }
+    
+    .item {
+        box-sizing: border-box;
+        border: 1px dotted black;
+        padding: 10px;
+        background-image: linear-gradient(to right, darkgrey, wheat);
+        height: 200px;
     }
     /* ------------- customShow --------------------------*/
     

@@ -4,6 +4,7 @@ function j() {
     alert('dk');
 } */
 
+/*---------------------------------- .customConatainer slideshow ---------------------------------*/
 const customShow = document.querySelector('.customShow');
 const customImg = document.querySelectorAll('.customShow img');
 
@@ -61,3 +62,5 @@ customShow.addEventListener('transitionend', () => {
     }
 
 });
+
+/*------------------------------- .quoteConatainer slides -------------------------*/
