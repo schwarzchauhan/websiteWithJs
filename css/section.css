@@ -1,5 +1,5 @@
     #section {
-        width: 60%;
+        width: 75%;
         margin: auto;
     }
     /*------------------------- .quotesContainer ------------------------------*/
@@ -24,8 +24,7 @@
     /* ------------- customShow --------------------------*/
     
     .customContainer {
-        margin: auto;
-        width: 60%;
+        width: 100%;
         border: 2px solid black;
         position: relative;
         overflow: hidden;
@@ -55,6 +54,18 @@
     
     #next {
         right: 0%;
+    }
+    /*------------------------------ extras ------------------------------*/
+    
+    .extras {
+        display: flex;
+        justify-content: flex-end;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+    }
+    
+    .socialConnect {
+        border: 1px dotted dodgerblue;
     }
     /*----------------------------- media query -------------------------------*/
     
