@@ -60,12 +60,27 @@
     .extras {
         display: flex;
         justify-content: flex-end;
-        background-color: blanchedalmond;
-        border: 2px solid black;
+        background-color: #f2f2f3;
+        border: 1px solid black;
+    }
+    /*------------------------ .socialPage ------------------*/
+    
+    .socialPage {
+        border: 1px dotted dodgerblue;
     }
     
-    .socialConnect {
-        border: 1px dotted dodgerblue;
+    .social-btn-container {
+        background-color: #4267b2;
+        display: flex;
+    }
+    
+    .social-btn {
+        flex-basis: 50%;
+        background-color: #ffffff;
+    }
+    
+    .page-pluggin {
+        display: none;
     }
     /*----------------------------- media query -------------------------------*/
     

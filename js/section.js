@@ -63,4 +63,27 @@ customShow.addEventListener('transitionend', () => {
 
 });
 
-/*------------------------------- .quoteConatainer slides -------------------------*/
+/*-------------------------------  .socialPage -------------------------*/
+
+function showSocialIframe(ele, ind) {
+    //console.log("show a page pluggin");
+    const socialBtn = document.querySelectorAll(".social-btn");
+    const pagePluggin = document.querySelectorAll('.page-pluggin');
+    //console.log(pagePluggin.length);
+
+    for (var i = 0; i < socialBtn.length; i++) {
+        socialBtn[i].style.backgroundColor = "";
+        socialBtn[i].style.color = '#444444';
+        console.log(i);
+    }
+
+    for (var j = 0; j < pagePluggin.length; j++) {
+        pagePluggin[j].style.display = 'none';
+    }
+
+    ele.style.backgroundColor = '#4267b2';
+    ele.style.color = '#ffffff';
+
+    pagePluggin[ind].style.display = 'block';
+}
+document.querySelectorAll(".social-btn")[0].click();
