@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*------------------------- .scrollToTop button ------------------------------------------*/
+
+.scrollToTop {
+    display: none;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+    transition: color 0.5s ease-in 0s, background-color 0.5s ease-out 0s;
+}
+
+.scrollToTop:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.btnShow {
+    animation: zoomIn 1s ease-out 0s 1;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.btnHide {
+    animation: zoomOut 0.5s ease-in 0s 1;
+}
+
+@keyframes zoomOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1);
+    }
+}

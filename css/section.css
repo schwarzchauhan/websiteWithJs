@@ -1,91 +1,128 @@
-    #section {
-        width: 75%;
-        margin: auto;
+#section {
+    width: 75%;
+    margin: auto;
+}
+
+
+/*------------------------- .quotesContainer ------------------------------*/
+
+.quoteContainer {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgb(231, 229, 238);
+}
+
+.owl-theme {
+    border: 1px solid black;
+}
+
+.item {
+    box-sizing: border-box;
+    border: 1px dotted black;
+    padding: 10px;
+    background-image: linear-gradient(to right, darkgrey, wheat);
+    height: 200px;
+}
+
+
+/* ------------- customShow --------------------------*/
+
+.customContainer {
+    width: 100%;
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.customShow {
+    display: flex;
+    width: 100%;
+    height: 450px;
+}
+
+#prev,
+#next {
+    position: absolute;
+    top: 50%;
+    padding: 5px;
+    color: aquamarine;
+    background: none;
+    font-size: 20px;
+    border: none;
+    border-width: 0;
+}
+
+#prev {
+    left: 0%;
+}
+
+#next {
+    right: 0%;
+}
+
+
+/*------------------------------ extras ------------------------------*/
+
+.extras {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 5px solid black;
+}
+
+
+/*------------------- .travel-container -----------------*/
+
+.travel-container {
+    flex-basis: 60%;
+    position: relative;
+    border: 4px solid rebeccapurple;
+    overflow: hidden;
+}
+
+.travel-slide {
+    display: flex;
+}
+
+.travel-slide img {
+    height: 300px;
+    width: 100%;
+}
+
+
+/*--------- nav-btn ---------------*/
+
+.travel-container button[class^="nav-btn"] {
+    position: absolute;
+    display: none;
+}
+
+
+/*-------------------- .socialPage -----------------*/
+
+.socialPage {
+    border: 4px solid red;
+}
+
+.social-btn-container {
+    background-color: #4267b2;
+    display: flex;
+}
+
+.social-btn {
+    flex-basis: 50%;
+    background-color: #ffffff;
+}
+
+.page-pluggin {
+    display: none;
+}
+
+
+/*----------------------------- media query -------------------------------*/
+
+@media (max-width: 839px) {
+    .introContainer div {
+        flex-basis: 40%;
     }
-    /*------------------------- .quotesContainer ------------------------------*/
-    
-    .quoteContainer {
-        border: 2px solid black;
-        padding: 10px;
-        background-color: rgb(231, 229, 238);
-    }
-    
-    .owl-theme {
-        border: 1px solid black;
-    }
-    
-    .item {
-        box-sizing: border-box;
-        border: 1px dotted black;
-        padding: 10px;
-        background-image: linear-gradient(to right, darkgrey, wheat);
-        height: 200px;
-    }
-    /* ------------- customShow --------------------------*/
-    
-    .customContainer {
-        width: 100%;
-        border: 2px solid black;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .customShow {
-        display: flex;
-        width: 100%;
-        height: 450px;
-    }
-    
-    #prev,
-    #next {
-        position: absolute;
-        top: 50%;
-        padding: 5px;
-        color: aquamarine;
-        background: none;
-        font-size: 20px;
-        border: none;
-        border-width: 0;
-    }
-    
-    #prev {
-        left: 0%;
-    }
-    
-    #next {
-        right: 0%;
-    }
-    /*------------------------------ extras ------------------------------*/
-    
-    .extras {
-        display: flex;
-        justify-content: flex-end;
-        background-color: #f2f2f3;
-        border: 1px solid black;
-    }
-    /*------------------------ .socialPage ------------------*/
-    
-    .socialPage {
-        border: 1px dotted dodgerblue;
-    }
-    
-    .social-btn-container {
-        background-color: #4267b2;
-        display: flex;
-    }
-    
-    .social-btn {
-        flex-basis: 50%;
-        background-color: #ffffff;
-    }
-    
-    .page-pluggin {
-        display: none;
-    }
-    /*----------------------------- media query -------------------------------*/
-    
-    @media (max-width: 839px) {
-        .introContainer div {
-            flex-basis: 40%;
-        }
-    }
+}

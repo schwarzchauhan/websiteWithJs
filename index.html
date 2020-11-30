@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/slide.css">
     <link rel="stylesheet" type="text/css" href="css/section.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <script src="https://kit.fontawesome.com/b898fcfbca.js" crossorigin="anonymous"></script>
 
@@ -175,6 +176,18 @@
         </div>
 
         <div class="extras">
+            <div class="travel-container">
+                <div class="travel-slide">
+                    <img src="img/t4.jpg" alt="">
+                    <img src="img/t1.jpg" alt="">
+                    <img src="img/t2.jpg" alt="">
+                    <img src="img/t3.jpg" alt="">
+                    <img src="img/t4.jpg" alt="">
+                    <img src="img/t1.jpg" alt="">
+                </div>
+                <button class="nav-btn-l" onclick="prevTravelPix()"><i class="fas fa-arrow-circle-left"></i></button>
+                <button class="nav-btn-r" onclick="nextTravelPix()"><i class="fas fa-arrow-circle-right"></i></button>
+            </div>
             <div class="socialPage">
                 <div class="social-btn-container">
                     <button class="social-btn" onclick="showSocialIframe(this,0)"> Facebook </button>
@@ -192,8 +205,10 @@
         </div>
 
 
-        <iframe width="400" height="400" margin="auto" display="block" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/ca5e7afb-65ff-4cf5-bc46-1309e505c66c">
-        </iframe>
+        <!-- <iframe width="400" height="400" margin="auto" display="block" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/ca5e7afb-65ff-4cf5-bc46-1309e505c66c">
+        </iframe> -->
+
+        <button class="scrollToTop" href="javascript:void(0)"><i class="fas fa-angle-double-up"></i></button>
 
         <script>
             $(document).ready(function() {
@@ -221,5 +236,6 @@
 </body>
 <script src="js/slide.js"></script>
 <script src="js/section.js"></script>
+<script src="js/footer.js"></script>
 
 </html>
